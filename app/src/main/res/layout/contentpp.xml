@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/tvName"
+                android:text="Thanh Nguyen"
+                android:gravity="top|left"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/avatacomment"
+                android:layout_toEndOf="@+id/avatacomment"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/avatacomment"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/tvDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="3dp"
+                android:layout_below="@+id/tvName"
+                android:text="Tính chia buồn mà thấy trang phục Nịnja bỗng nhớ tới con Ninja không đèn không giơ tay tạt cái vèo cắt ngang đường chiều nay làm thắng cháy vỏ...chửi nó mà nó không thèm nghe hay quay đầu lại mà vẫn phi thẳng."
+                android:layout_alignRight="@+id/tvDatetime"
+                android:layout_alignEnd="@+id/tvDatetime"
+                android:layout_alignLeft="@+id/tvName"
+                android:layout_alignStart="@+id/tvName" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/tvDatetime"
+                android:textSize="14dp"
+                android:layout_marginTop="1dp"
+                android:gravity="top|left"
+                android:layout_marginRight="5dp"
+                android:layout_alignTop="@+id/tvName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="3d ago"
+                android:layout_alignBottom="@+id/tvName" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView20"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignTop="@+id/tvName"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/tvDatetime"
+                android:layout_toStartOf="@+id/tvDatetime" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/imageView21"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_alignBottom="@+id/tvDes"
+                android:layout_alignLeft="@+id/tvName"
+                android:layout_alignStart="@+id/tvName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/tvUserName10"
+                android:layout_below="@+id/tvDes"
+                android:layout_alignLeft="@+id/tvDes"
+                android:layout_alignStart="@+id/tvDes"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
